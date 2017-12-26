@@ -1,0 +1,10 @@
+com/couchCamelOfbiz/customProcessor/ProcessorGetToken.class
+com/couchCamelOfbiz/customProcessor/JsonToCsvProcessor.class
+com/couchCamelOfbiz/pojo/AdjustmentList.class
+com/couchCamelOfbiz/CouchCamelOfbizMain.class
+com/couchCamelOfbiz/pojo/OrderPojo.class
+com/couchCamelOfbiz/CouchCamelOfbizRoute.class
+com/couchCamelOfbiz/pojo/PaymentList.class
+com/couchCamelOfbiz/pojo/TokenPojo.class
+com/couchCamelOfbiz/pojo/ItemList.class
+com/couchCamelOfbiz/pojo/JsonUtil.class
