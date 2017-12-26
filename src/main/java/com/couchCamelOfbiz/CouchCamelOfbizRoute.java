@@ -68,7 +68,8 @@ public class CouchCamelOfbizRoute extends RouteBuilder{
 			.startupOrder(1)
 			.process(new JsonToCsvProcessor())
 			.to("file:/home/r2/Desktop/ofBizFile?fileExist=append&fileName=orders-${date:now:yyyyMMdd}.csv");
-        
+
+//        We are creating another route, because we want to save all the orders first in CSV, then process this single csv
         from("file:/home/r2/Desktop/ofBizFile")
         	.startupOrder(2)
 //        	.setHeader(Exchange.HTTP_QUERY,constant("USERNAME=admin&PASSWORD=hotwax@786"))
