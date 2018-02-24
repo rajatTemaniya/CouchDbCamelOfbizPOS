@@ -1,4 +1,4 @@
-package com.couchCamelOfbiz.pojo;
+package pojo;
 
 import java.util.HashMap;
 import java.util.List;
@@ -173,7 +173,7 @@ public class OrderPojo {
     @JsonProperty("paymentList")
     public List<PaymentList> getPaymentList() {
         return paymentList;
-    }	
+    }
 
     @JsonProperty("paymentList")
     public void setPaymentList(List<PaymentList> paymentList) {

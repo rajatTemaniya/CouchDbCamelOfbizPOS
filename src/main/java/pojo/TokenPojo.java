@@ -1,4 +1,4 @@
-package com.couchCamelOfbiz.pojo;
+package pojo;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,38 +11,38 @@ import org.codehaus.jackson.map.annotate.JsonSerialize;
 
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 @JsonPropertyOrder({
-    "maxAmount",
-    "paymentMethodTypeId"
+"sessionId",
+"token"
 })
-public class PaymentList {
+public class TokenPojo {
 
-    @JsonProperty("maxAmount")
-    private Integer maxAmount;
-    @JsonProperty("paymentMethodTypeId")
-    private String paymentMethodTypeId;
+    @JsonProperty("sessionId")
+    private String sessionId;
+    @JsonProperty("token")
+    private String token;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    @JsonProperty("maxAmount")
-    public Integer getMaxAmount() {
-        return maxAmount;
+    @JsonProperty("sessionId")
+    public String getSessionId() {
+        return sessionId;
     }
 
-    @JsonProperty("maxAmount")
-    public void setMaxAmount(Integer maxAmount) {
-        this.maxAmount = maxAmount;
+    @JsonProperty("sessionId")
+    public void setSessionId(String sessionId) {
+        this.sessionId = sessionId;
     }
 
-    @JsonProperty("paymentMethodTypeId")
-    public String getPaymentMethodTypeId() {
-        return paymentMethodTypeId;
+    @JsonProperty("token")
+    public String getToken() {
+        return token;
     }
 
-    @JsonProperty("paymentMethodTypeId")
-    public void setPaymentMethodTypeId(String paymentMethodTypeId) {
-        this.paymentMethodTypeId = paymentMethodTypeId;
+    @JsonProperty("token")
+    public void setToken(String token) {
+        this.token = token;
     }
-    
+
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -52,5 +52,4 @@ public class PaymentList {
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
     }
-    
 }

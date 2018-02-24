@@ -1,5 +1,4 @@
-
-package com.couchCamelOfbiz.pojo;
+package pojo;
 
 import java.util.HashMap;
 import java.util.Map;
